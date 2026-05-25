@@ -1,0 +1,32 @@
+{
+  "name": "biblebot",
+  "version": "1.0.0",
+  "description": "Christian AI advisor Telegram bot",
+  "main": "dist/bot/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/bot/index.ts",
+    "start": "node dist/bot/index.js",
+    "download-bible": "ts-node src/scripts/downloadBible.ts",
+    "seed": "ts-node src/scripts/seedBible.ts",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3",
+    "node-telegram-bot-api": "^0.66.0",
+    "openai": "^6.35.0",
+    "zod": "^3.24.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-telegram-bot-api": "^0.64.8",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
