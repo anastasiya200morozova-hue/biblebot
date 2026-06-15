@@ -14,7 +14,7 @@ export const config = {
   },
   anthropic: {
     apiKey: requireEnv('ANTHROPIC_API_KEY'),
-    modelMain: 'claude-sonnet-4-20250514',
+    modelMain: 'claude-sonnet-4-6',
     modelAux: 'claude-haiku-4-5-20251001',
   },
   openai: {
